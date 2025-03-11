@@ -172,6 +172,7 @@ function build_application_code {
     mvn \
     -Dgalasa.source.repo=${SOURCE_MAVEN} \
     -Dgalasa.central.repo=https://repo.maven.apache.org/maven2/ \
+    --settings ${BASEDIR}/settings.xml \
     clean install
     rc=$?
     if [[ "${rc}" != "0" ]]; then 
@@ -187,6 +188,7 @@ function build_test_code {
     mvn \
     -Dgalasa.source.repo=${SOURCE_MAVEN} \
     -Dgalasa.central.repo=https://repo.maven.apache.org/maven2/ \
+    --settings ${BASEDIR}/settings.xml \
     clean install
     rc=$?
     if [[ "${rc}" != "0" ]]; then 
