@@ -16,7 +16,6 @@ import dev.galasa.http.HttpClient;
 import dev.galasa.http.IHttpClient;
 import dev.galasa.zos.IZosImage;
 import dev.galasa.zos.ZosImage;
-import dev.galasa.zos.ZosManagerException;
 import dev.galasa.zos3270.ITerminal;
 import dev.galasa.zos3270.Zos3270Terminal;
 
